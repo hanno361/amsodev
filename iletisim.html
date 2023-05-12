@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iletişim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="main">kadir</a>
+        <div class="menu-btn "></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./index.html">hakkimda</a>
+                <a href="./sehir.html">şehir</a>
+                <a href="./iletisim.html">iletişim</a>
+                <a href="#">cv</a>
+                <a href="#">login</a>
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="title">bize ulaşın</div>
+            <form action="">
+                <div class="userdetails">
+                    <div class="input-box">
+                        <span class="details">full name</span>
+                        <input type="text" placeholder="ali çelik">
+                    </div>
+                    <fieldset>
+                        <legend>tercihiniz hangisi</legend>
+
+                        <div>
+                            <input type="checkbox" id="1" name="1" checked>
+                            <label for="1">1</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="2" name="2">
+                            <label for="2">2</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="start">Start date:</label>
+
+                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                        max="2018-12-31">
+
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" pattern=".com" required>
+                    <label for="pp">pp yükleyin:</label>
+
+                    <input type="file" id="pp" name="pp" accept="image/png, image/jpeg">
+                    <label for="sayi">sayı seçin 1-10:</label>
+
+                    <input type="number" id="sayi" name="sayi" min="10" max="100">
+                    <fieldset>
+                        <legend>birini seç</legend>
+
+                        <div>
+                            <input type="radio" id="huey" name="drone" value="huey" checked>
+                            <label for="huey">Huey</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="dewey" name="drone" value="dewey">
+                            <label for="dewey">Dewey</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="louie" name="drone" value="louie">
+                            <label for="louie">Louie</label>
+                        </div>
+                    </fieldset>
+                    <p>Audio settings:</p>
+
+                    <div>
+                        <input type="range" id="volume" name="volume" min="0" max="11">
+                        <label for="volume">Volume</label>
+                    </div>
+
+                    <div>
+                        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+                        <label for="cowbell">Cowbell</label>
+                    </div>
+                    <label for="phone">Enter your phone number:</label>
+
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <small>Format: 530-000-0000</small>
+
+
+
+
+
+
+                </div>
+
+
+            </form>
+
+
+
+
+</body>
+
+</html>

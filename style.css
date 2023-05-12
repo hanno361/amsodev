@@ -87,6 +87,18 @@ section {
 
 
 }
+.sehir {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #7fffd4;
+
+
+}
 
 .home .content {
     z-index: 888;
@@ -107,16 +119,46 @@ section {
     margin-bottom: 40px;
     color: #ff8c00;
 }
-
-.home .content h1 span {
-
-    font-size: 1.2em;
-    font-weight: 600;
+.sehir .content {
+    z-index: 888;
+    color: #7fffd4;
+    width: 70%;
+    margin-top: 50px;
 
 
 }
 
-.home .content p {
+.sehir .content h1 {
+
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color: #ff8c00;
+}
+
+.home .content h1 span {
+
+    font-size: 1.2em;
+    font-weight: 900;
+
+
+}
+.sehir .content h1 span {
+
+    font-size: 1.2em;
+    font-weight: 900;
+
+
+}
+
+.sehir .content p {
+    margin-bottom: 65px;
+
+}
+.sehir .content p {
     margin-bottom: 65px;
 
 }
