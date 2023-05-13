@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>favori şehrim</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <a href="#" class="main">kadir</a>
-        <div class="menu-btn "></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="./index.html">hakkimda</a>
-                <a href="./sehir.html">şehir</a>
-                <a href="./iletisim.html">iletişim</a>
-                <a href="#">cv</a>
-                <a href="#">login</a>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>favori şehrim</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="main">kadir</a>
+            <div class="menu-btn "></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="./index.html">hakkimda</a>
+                    <a href="./sehir.html">şehir</a>
+                    <a href="./iletisim.html">iletişim</a>
+                    <a href="#">cv</a>
+                    <a href="#">login</a>
 
 
 
 
-            </div>
-    </header>
+                </div>
+            </header>
 
-    <section class="sehir">
-        <div class="content">
-            <h1>elazığ <br><span></span> <h5>kürt diyarı</h5> </span></h1>
-            <p>kdsofhdsjfbdslıjfbasıldfbsadlıfbsdfklsjdabfldsbfladsfbkdlasfbsadlbfjaksldfbksadlfb</p>
-        </div>
+            <section class="sehir">
+                <div class="content">
+                    <h1>elazığ<br>
+
+                    </h1>
+                    <p>kdsofhdsjfbdslıjfbasıldfbsadlıfbsdfklsjdabfldsbfladsfbkdlasfbsadlbfjaksldfbksadlfb</p>
+                </div>
 
 
-    </section>
+            </section>
+            <script type="text/javascript">
 
-    
-</body>
-</html>
+        const menubtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menubtn.addEventListener("click", () => {
+
+            menubtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    </script>
+        </body>
+
+    </html>

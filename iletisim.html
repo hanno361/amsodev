@@ -29,7 +29,9 @@
     </header>
     <section>
         <div class="container">
-            <div class="title">bize ulaşın</div>
+            <div class="title">
+                <h1>bize ulaşın <br> </h1>
+            </div>
             <form action="">
                 <div class="userdetails">
                     <div class="input-box">
@@ -97,6 +99,8 @@
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
                     <small>Format: 530-000-0000</small>
+                    <input class="favorite styled" type="button" value="Add to favorites">
+
 
 
 
@@ -108,6 +112,17 @@
 
             </form>
 
+            <script type="text/javascript">
+
+                const menubtn = document.querySelector(".menu-btn");
+                const navigation = document.querySelector(".navigation");
+
+                menubtn.addEventListener("click", () => {
+
+                    menubtn.classList.toggle("active");
+                    navigation.classList.toggle("active");
+                });
+            </script>
 
 
 
