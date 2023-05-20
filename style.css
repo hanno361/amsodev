@@ -5,9 +5,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+
 
 
 }
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+  }
+  
+  option {
+    padding: 0;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }
+  Copy to Clipboard
+  
 
 
 
@@ -116,6 +136,48 @@ section {
     color: #ff8c00;
 }
 
+  
+  
+  
+  table {
+    font-family: Verdana, Serif, "Times New Roman";
+    border-collapse: collapse;
+    background-color: #666;
+    width: 60%;
+  }
+  
+  td, th, tr {
+    justify-content: center;
+    border: 1px solid white;
+    text-align: center;
+    padding: 4px;
+    height: 50px;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 15x;
+    font-family: Verdana;
+    border-radius: 8px;
+    border-color: white;
+  }
+  
+  a:hover {
+    background-color: white;
+    font-weight: bold;
+  }
+  main {
+    background-color: #0099cc;
+    padding: 60px;
+    font-family: Verdana;
+    border-radius: 8px;
+  }
+  
+  
+
+
 
 
 
@@ -136,7 +198,7 @@ section {
 
     font-size: 1.2em;
     font-weight: 900;
-    color: #4000ff;
+    color: #ff8c00;
     font-size: large;
 
 }
@@ -152,11 +214,14 @@ section {
     line-height: 3em;
     text-decoration: double;
     font-size: 200%;
-    background-color: #539165;
+    background-color: #3d413e;
     color: #ff8c00;
     border-radius: 50px;
     
 
+}
+.iletisim .container {
+    text-align: center;
 }
 #slider {
     margin: 0 auto;

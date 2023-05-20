@@ -18,8 +18,8 @@
                 <a href="./index.html">hakkimda</a>
                 <a href="./sehir.html">şehir</a>
                 <a href="./iletisim.html">iletişim</a>
-                <a href="#">cv</a>
-                <a href="#">login</a>
+                <a href="./cv.html">cv</a>
+                
 
 
 
@@ -30,76 +30,83 @@
     <section>
         <div class="container">
             <div class="title">
-                <h1>bize ulaşın <br> </h1>
+                <h1>İLETİŞİM BİLGİLERİ <br> </h1>
             </div>
             <form action="">
                 <div class="userdetails">
                     <div class="input-box">
-                        <span class="details">full name</span>
-                        <input type="text" placeholder="ali çelik">
+                        <span class="details">İsim Soyisim</span>
+                        <input type="text" placeholder="Can Yüzkollar">
                     </div>
+                    
+
+                    <label for="date">Tarih:</label>
+
+                    <input type="date" id="date" name="date" value="2018-07-22" min="2023-01-01"
+                        max="2040-12-31">
+
+                    
+                   
+                    <label for="sayi">Yaşınız kaç ?</label>
+
+                    <input type="number" id="sayi" name="sayi" min="10" max="100">
                     <fieldset>
-                        <legend>tercihiniz hangisi</legend>
+                        <legend>Ünvanınız</legend>
+
+                        <div>
+                            <input type="radio" id="ogr" name="drone" value="ogr" checked>
+                            <label for="ogr">Öğrenci</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="ass" name="ass" value="ass">
+                            <label for="ass">Asistan</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="ogretmen" name="ogretmen" value="ogretmen">
+                            <label for="ogretmen">Öğretmen</label>
+                        </div>
+                    </fieldset>
+                    
+
+                    <label for="tempB">Sitemizi sevdiniz mi?</label><br />
+                    <input type="range" id="tempB" name="temp" list="values" />
+                    
+                    <datalist id="values">
+                      <option value="0" label="Çok kötü"></option>
+                      <option value="25" label="Beğenmedim"></option>
+                      <option value="50" label="İdare eder"></option>
+                      <option value="75" label="Güzel"></option>
+                      <option value="100" label="Harika!"></option>
+                    </datalist>
+
+                   
+                    <label for="phone">Telefon numaranızı girin</label>
+
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="email"> <br> Mail adresinizi girin</label>
+                    <input type="email" id="email" pattern=".com" required>
+
+                    
+                    <fieldset>
+                        <legend>Size nasıl ulaşabiliriz?</legend>
 
                         <div>
                             <input type="checkbox" id="1" name="1" checked>
-                            <label for="1">1</label>
+                            <label for="1">Telefon</label>
                         </div>
 
                         <div>
                             <input type="checkbox" id="2" name="2">
-                            <label for="2">2</label>
+                            <label for="2">Mail</label>
                         </div>
                     </fieldset>
-
-                    <label for="start">Start date:</label>
-
-                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
-                        max="2018-12-31">
-
-                    <label for="email">Enter your email:</label>
-                    <input type="email" id="email" pattern=".com" required>
-                    <label for="pp">pp yükleyin:</label>
+                    <label for="pp">eklemek istediğiniz belge varsa ekleyebilirsiniz.</label>
 
                     <input type="file" id="pp" name="pp" accept="image/png, image/jpeg">
-                    <label for="sayi">sayı seçin 1-10:</label>
+                    <input class="favorite styled" type="button" value="GÖNDER">
 
-                    <input type="number" id="sayi" name="sayi" min="10" max="100">
-                    <fieldset>
-                        <legend>birini seç</legend>
-
-                        <div>
-                            <input type="radio" id="huey" name="drone" value="huey" checked>
-                            <label for="huey">Huey</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="dewey" name="drone" value="dewey">
-                            <label for="dewey">Dewey</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="louie" name="drone" value="louie">
-                            <label for="louie">Louie</label>
-                        </div>
-                    </fieldset>
-                    <p>Audio settings:</p>
-
-                    <div>
-                        <input type="range" id="volume" name="volume" min="0" max="11">
-                        <label for="volume">Volume</label>
-                    </div>
-
-                    <div>
-                        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
-                        <label for="cowbell">Cowbell</label>
-                    </div>
-                    <label for="phone">Enter your phone number:</label>
-
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-                    <small>Format: 530-000-0000</small>
-                    <input class="favorite styled" type="button" value="Add to favorites">
 
 
 
